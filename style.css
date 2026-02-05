@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(./fonts/ProductSans-Regular.ttf);
+}
+
+/*@font-face {
+    font-family: Product Sans B;
+    src: url(./fonts/ProductSans-Bold.ttf);
+}*/
+
+/* pagina inteira*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos globales */
+html, body {
+    height: 100%;
+    width: 100%;
+    /* overflow-x: hidden;  Evita o scroll horizontal */
+    /*font-family: Arial, sans-serif;*/
+}
+
+/*barra lateral de scroll oculta*/
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background: orangered;
+}
+
+.nav-container{
+    position:fixed;
+    display: flex;
+    align-items: center;/* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    width: 100%; /* Largura total da barra de navegação */
+    height: 10vh; /* Altura da barra de navegação */
+    z-index: 99; /* Mantém a barra de navegação acima de outros elementos (-1 deixa atras)*/
+}
+
+.nav-container a{
+        color:white;
+        text-decoration: none;
+        font-size: 24px;
+}
+
+.nav-container img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.nav-menu{
+    display: flex;
+    gap: 50px; /* Espaçamento entre os links */
+}
+
+.hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0)); /* Degradê de laranja claro para laranja escuro */
+}
+.hero h1{
+    color: white;
+    font-size: 25vw; /* Tamanho responsivo do texto vw= 1/4 da tela*/
+    text-align: center;
+}
+
+#fanta {
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+}
+
+#laranja-cortada {
+    position: absolute;
+    width: 15%;
+    top: 10%; /* Ajuste a posição conforme necessário */
+    left: 32%; /* Ajuste a posição conforme necessário */
+    z-index: 2;
+}
+
+#laranja {
+    position: absolute;
+    width: 20%;
+    top: 55%;
+    right: 30%;
+    z-index: 3;
+}
+
+#folha {
+    position: absolute;
+    width: 18%;
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+}
+
+#folha2 {
+    position: absolute;
+    width: 12%;
+    top: 70%;
+    right: 8%;
+    transform: rotate(-90deg);
+}
+
+#folha3 {
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+/*seção dois*/
+
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #4d231c;
+}
+
+.left-side, .right-side{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.left-side svg{
+    margin-top: 50vh;
+    width: 90%;
+    transform: rotateX(50deg);
+}
+
+.right-side h2{
+    color: white;
+    font-size: 5vw;
+}
+
+.right-side p{
+    color: white;
+    font-size: 1vw;
+    width: 80%;
+}
+
+/*seção três*/
+
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 5vh;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.card {
+    position: relative;
+    display: flex;
+    background: white;
+    align-items: center;
+    width: 25vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px; /* Bordas arredondadas */
+}
+
+.card h3{
+    margin-top: 40vh;
+    font-size: 3vw;
+    color: black;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    padding: 1vw 2vw;
+}
+
+#cocacola{
+    position: absolute;
+    top: -14%;
+    width: 116%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#pepsi{
+    position: absolute;
+    top: -15%;
+    width: 113%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.lemon{
+    position: absolute;
+    top: -30%;
+    width: 25vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
